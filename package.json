@@ -1,0 +1,23 @@
+{
+  "name": "node-express-woointro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "woomedya",
+  "homepage": "https://github.com/woomedya/node-express-woointro#node-express-woointro",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/woomedya/node-express-woointro.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "express-async-router": "^0.1.15",
+    "moment": "^2.24.0",
+    "mongodb": "^3.5.5",
+    "woo-crypto": "^1.0.1",
+    "woo-utilities": "^1.0.8"
+  }
+}
