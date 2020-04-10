@@ -1,7 +1,4 @@
 const config = require('./config');
-const woointroRouter = require('./src/routers/woointro');
-const woointroRepo = require('./src/repositories/woointro');
-const introModel = require('./src/repositories/models/intro');
 const woocontent = require('woo-utilities/mongoose-woocontent');
 const authToken = require('woo-utilities/authTokenHandler');
 
@@ -25,12 +22,12 @@ const init = ({
 module.exports = {
     init,
     router: {
-        woointro: woointroRouter
+        woointro: () => require('./src/routers/woointro')
     },
     repository: {
-        woointro: woointroRepo
+        woointro: () => require('./src/repositories/woointro')
     },
     model: {
-        intro: introModel
+        intro: () => require('./src/repositories/models/intro')
     }
 }
